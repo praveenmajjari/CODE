@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vibe Tune - Mood Based Music</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎶 Vibe Tune</h1>
+    <p>Select your current mood to get a music suggestion:</p>
+    
+    <select id="moodSelector" onchange="showPlaylist()">
+      <option value="" selected disabled>Select Mood</option>
+      <option value="happy">😊 Happy</option>
+      <option value="sad">😢 Sad</option>
+      <option value="energetic">🔥 Energetic</option>
+      <option value="relaxed">😌 Relaxed</option>
+    </select>
+
+    <div id="playerContainer">
+      <!-- YouTube iframe will appear here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
